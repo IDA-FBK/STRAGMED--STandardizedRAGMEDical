@@ -1,0 +1,29 @@
+[project]
+name = "chatfaq"
+version = "0.1.0"
+description = "Reproduction package for AIME 2026 paper: STRAGMED-Standardizing Retrieval-Augmented Generation Pipelines in Medical Domains"
+authors = [
+    {name = "Leonardo Sanna", email = "lsanna@fbk.eu"},
+    {name = "Esin Ezgi Yildiz", email = "eyildiz@fbk.eu"},
+    {name = "Mauro Dragoni", email = "dragoni@fbk.eu"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<4.0"
+dependencies = [
+    "llama-index (>=0.14.12,<0.15.0)",
+    "llama-index-embeddings-huggingface (>=0.6.1,<0.7.0)",
+    "llama-index-vector-stores-chroma (>=0.5.5,<0.6.0)",
+    "llama-index-retrievers-bm25 (>=0.6.5,<0.7.0)",
+    "llama-index-llms-openrouter (>=0.4.3,<0.5.0)",
+    "chromadb (>=1.4.0,<2.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "sentence-transformers (>=5.2.0,<6.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "datasets (>=4.5.0,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

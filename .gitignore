@@ -1,0 +1,21 @@
+# Raw upstream benchmark files — re-download from official sources
+# (only needed if you want to re-run prepare_mirage_datasets.py)
+inputs/benchmark.json
+inputs/pubmedqa_labeled_1k.json
+inputs/training11b.json
+inputs/training12b_new.json
+
+# Generated artifacts
+corpus/
+embeddings/
+runs/
+
+# Environment + secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
